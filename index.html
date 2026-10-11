@@ -3,49 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ookini</title>
+    <title>Corporativo NELOSWAL | Firma Legal & Consultoría</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Ookini</h1>
-        <h2>Café de especialidad</h2>
-        <nav>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#metodos">Métodos</a>
-            <a href="#contacto">Contacto</a>
+
+    <!-- Bar de Información Superior -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span><i class="fa-solid fa-clock"></i> Atención: Lunes a Jueves de 9:00 a.m. a 3:00 p.m.</span>
+            <span><i class="fa-solid fa-phone"></i> Tel. / WhatsApp: <a href="tel:79766240" style="color: #fff;">7976-6240</a> | <a href="mailto:neloswal@gmail.com" style="color: #fff;">neloswal@gmail.com</a></span>
+        </div>
+    </div>
+
+    <!-- Encabezado con Membrete Corporativo -->
+    <header class="header-corporate">
+        <div class="container brand-container">
+            <div class="brand-left">
+                <!-- Logo de Corporativo NELOSWAL -->
+                <img src="logo-neloswal.jpg" alt="Logo Corporativo NELOSWAL" class="corporate-logo">
+                <div class="logo-text">
+                    <h1 class="brand-title">CORPORATIVO NELOSWAL</h1>
+                    <p class="brand-subtitle">ABOGACÍA • NOTARIADO • CONSULTORÍA INFORMÁTICA Y CONTABLE</p>
+                </div>
+            </div>
+
+            <!-- Perfil del Abogado con Foto -->
+            <div class="lawyer-profile">
+                <img src="foto-nelson.jpg" alt="Lic. Nelson Oswaldo Deras" class="lawyer-photo">
+                <div class="credentials">
+                    <p class="lawyer-name">Lic. Nelson Oswaldo Deras</p>
+                    <p class="lawyer-title">Licenciado en Ciencias Jurídicas</p>
+                    <p class="lawyer-title">Posgrado en Derecho Empresarial</p>
+                    <p class="lawyer-title">Técnico en Sistemas Informáticos</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul>
+                    <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                    <li><a href="#servicios"><i class="fa-solid fa-briefcase"></i> Áreas de Práctica</a></li>
+                    <li><a href="#tarifas"><i class="fa-solid fa-tags"></i> Tarifas de Asesoría</a></li>
+                    <li><a href="#modelos"><i class="fa-solid fa-file-lines"></i> Modelos de Documentos</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto / QR</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="metodos"> 
-        <p>Ookini significa gracias en Kansai, la región de Japón donde están Kioto y Osaka, y donde nació el método Kyoto drip que preparamos en barra. Es una palabra que se dice mucho y se dice rápido, una forma de agradecer que no necesita ceremonia. Nos quedamos con ella porque resume algo de cómo entendemos este oficio: el café es un acto de gratitud hacia quien cultivó el grano, hacia quien lo tostó, y hacia quien se sienta a tomarlo sin afán. Servimos café de especialidad preparado con métodos lentos, granos seleccionados de productores que conocemos por nombre, y la atención que cada taza merece. Nada se hace de prisa, y nada se hace en piloto automático. <span class="precio">$7</span></p>
+    <!-- Contenido Principal -->
+    <main class="container">
 
-        <h2 id="metodos">Métodos de preparación</h2>
+        <!-- Buscador -->
+        <section id="buscador-seccion" class="search-box">
+            <h2><i class="fa-solid fa-magnifying-glass"></i> Buscador de Documentos Legales con Membrete</h2>
+            <p>Encuentre escritos y modelos de documentos oficiales bajo el sello y formato de Corporativo NELOSWAL.</p>
+            <div class="search-bar">
+                <input type="text" id="input-busqueda" placeholder="Buscar documento o modelo...">
+                <button type="button"><i class="fa-solid fa-search"></i> Buscar</button>
+            </div>
+        </section>
 
-        <h3 class= "metodo-titulo">  V60</h3>
-        <p>Filtrado por goteo con molienda media. El agua cae despacio sobre el café durante tres minutos y arrastra notas limpias y brillantes. Es el método más versátil de la barra y el mejor para descubrir la personalidad de un grano nuevo.<span class="precio">$8</span></p>
+        <!-- Tarifas de Asesoría -->
+        <section id="tarifas" class="section-block">
+            <h2 class="section-title"><i class="fa-solid fa-scale-balanced"></i> Tarifas de Asesoría Legal Personalizada</h2>
+            <div class="grid-pricing">
 
-        <h3 class= "metodo-titulo"> Kyoto drip</h3>
-        <p>Extracción en frío gota a gota durante ocho horas. Molienda media gruesa, agua a temperatura ambiente, paciencia japonesa. El resultado es un café denso, dulce y con muy poca acidez. Lo dejamos preparándose desde la noche anterior.<span class="precio">$3</span></p>
+                <div class="pricing-card">
+                    <div class="price-header">
+                        <h3>Asesoría Legal Personalizada</h3>
+                        <p class="price-location">Área Metropolitana de San Salvador</p>
+                    </div>
+                    <div class="price-body">
+                        <span class="price-amount">$25.00</span>
+                        <p>Atención directa sobre consultas jurídicas generales, notariado y contratos.</p>
+                        <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20una%20Asesoría%20Legal%20Personalizada" target="_blank" class="btn-price"><i class="fa-brands fa-whatsapp"></i> Agendar por $25.00</a>
+                    </div>
+                </div>
 
-        <h3 class= "metodo-titulo"> Siphon japonés</h3>
-        <p>Método de vacío con molienda media fina. El agua sube por presión, se mezcla con el café durante un minuto, y baja filtrada cuando se apaga la llama. Tarda cuatro minutos en total y produce una taza limpia y aromática.<span class="precio">$2</span></p>
+                <div class="pricing-card featured">
+                    <div class="price-badge">Especializada</div>
+                    <div class="price-header">
+                        <h3>Asesoría Mercantil y Derecho de Deudores</h3>
+                        <p class="price-location">Empresas, Sociedades y Personas Naturales</p>
+                    </div>
+                    <div class="price-body">
+                        <span class="price-amount">$50.00</span>
+                        <p>Análisis de deudas con instituciones financieras, embargos y juicios ejecutivos.</p>
+                        <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20una%20Asesoría%20Mercantil%20y%20Derecho%20de%20Deudores" target="_blank" class="btn-price"><i class="fa-brands fa-whatsapp"></i> Agendar por $50.00</a>
+                    </div>
+                </div>
 
-        <h3 class= "metodo-titulo"> Prensa francesa</h3>
-        <p>Inmersión total con molienda gruesa durante cuatro minutos. Sin filtro de papel, los aceites del café pasan a la taza y construyen un cuerpo redondo y robusto. Es nuestro único método sin reserva, listo apenas lo pidas.<span class="precio">$21</span></p>
+                <div class="pricing-card">
+                    <div class="price-header">
+                        <h3>Asesoría del Régimen de Excepción</h3>
+                        <p class="price-location">Materia Penal y Garantías Constitucionales</p>
+                    </div>
+                    <div class="price-body">
+                        <span class="price-amount">$60.00</span>
+                        <p>Orientación especializada, investigación técnica del expediente y visitas a centros penales.</p>
+                        <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20una%20Asesoría%20del%20Régimen%20de%20Excepción" target="_blank" class="btn-price"><i class="fa-brands fa-whatsapp"></i> Agendar por $60.00</a>
+                    </div>
+                </div>
 
-        <section id="reservas">
-<p>Tazas disponibles hoy: <span id="contador-tazas">50</span></p>
-<button id="boton-reservar">Reservar una taza</button>
-</section>
+            </div>
+        </section>
 
- 
+        <!-- Directorio Exacto de la Imagen -->
+        <section id="modelos" class="section-block">
+            <h2 class="section-title"><i class="fa-solid fa-folder-tree"></i> Modelos de Documentos Legales</h2>
+            <p style="margin-bottom: 20px; color: #555;">Catálogo de escritos y modelos adaptados al membrete y formato de <strong>Corporativo NELOSWAL</strong> conforme a la legislación de El Salvador.</p>
 
-        <img src="ookini.jpg" alt="Barra de café Ookini" width="400">
+            <div class="legal-categories">
+                
+                <!-- 1. ÁREA MERCANTIL O CORPORATIVA EN EL SALVADOR -->
+                <div class="category-box">
+                    <h3><i class="fa-solid fa-building"></i> Área Mercantil o Corporativa en El Salvador</h3>
+                    <ul>
+                      <li>
+            <span>Modelo de escritura de constitución de sociedad en El Salvador con accionistas extranjeros</span> 
+            <a href="https://drive.google.com/file/d/1PZf3idQxfmChMbJbF-SNu4zljU3Altzd/view?usp=sharing" download class="btn-doc-link">
+                <i class="fa-solid fa-file-pdf"></i> Descargar PDF
+            </a>
+        </li>
+                        <li>
+    <span>Modelo de nombramiento de gerente para una empresa en El Salvador</span> 
+    <a href="https://drive.google.com/file/d/1Py-bFtVBQT30O4QzYV_pT4uFOBi5Mr7I/view?usp=sharing" target="_blank" class="btn-doc-link">
+        <i class="fa-solid fa-file-pdf"></i> Ver / Descargar
+    </a>
+</li>
+                        <li><span>Constitución de Sociedad en Comandita por Acciones</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Constitución de sociedad en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modificación de sociedad Salvadoreña</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Liquidación de sociedad Salvadoreña</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Credencial de Junta Directiva</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta de Renuncia de Junta Directiva</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta de Junta Directiva</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta de Junta General de Accionistas</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Contrato de Resciliación</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Fg86 - Informe de Notarios por otorgamiento de instrumentos</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Auténtica de Firma de Representante Legal de una Sociedad en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta Asociación Agropecuaria</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Escritura de Aumento de Capital de una Sociedad en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo estatutos de una iglesia en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de escritura de fusión por absorción</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Requisitos para Registrarse como Comerciante Individual en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                    </ul>
+                </div>
 
-        <p>Abierto todos los días, de 8 a. m. a 8 p. m. San Salvador</p>
+                <!-- 2. ÁREA DE DERECHO CIVIL EN EL SALVADOR -->
+                <div class="category-box">
+                    <h3><i class="fa-solid fa-house-chimney"></i> Área de Derecho Civil en El Salvador</h3>
+                    <ul>
+                        <li><span>Compraventa de vehículo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Arrendamiento de Vehículo con Promesa de Venta</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Compraventa de motor</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Compraventa de arma de fuego</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Compraventa de inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Hipoteca de inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Promesa de venta de inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Contrato de arrendamiento en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Contrato de prestación de servicios profesionales</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Remedición de inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Declaración Jurada</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Cancelación de hipoteca</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Otorgamiento de crédito prendario</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Otorgamiento de crédito hipotecario</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Leasing de equipo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Contrato de Trabajo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Donación Irrevocable</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Donación Revocable (cortesía de Marielos Zaldaña)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Donación Revocable con Testigos</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta de conciliación Extrajudicial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta Conciliación de Tránsito</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3. ÁREA DE PROPIEDAD INTELECTUAL EN EL SALVADOR -->
+                <div class="category-box">
+                    <h3><i class="fa-solid fa-lightbulb"></i> Área de Propiedad Intelectual en El Salvador</h3>
+                    <ul>
+                        <li><span>Cesión de derechos de uso de marca</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Solicitud de aplicación de marca en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Solicitud de aplicación de patentes</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Solicitud de registro sanitario (próximamente)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Formulario para el Registro Sanitario de Vacunas (Obtenido de DNM, OCT 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Formularios de Cambios Post-Registro Cambios Administrativos (Obtenido de DNM, OCT 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Formulario de Solicitud para el Reconocimiento de Registro Sanitario de Alimentos y Bebidas de los Países Miembros de la Unión Aduanera (Obtenido de Ministerio de Salud de El Salvador Oct 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Formulario para Iniciar el Trámite de Registro de Alimentos y Bebidas Nacionales (Obtenido de Ministerio de Salud de El Salvador, Oct 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Solicitud de registro de derechos de autor</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                    </ul>
+                </div>
+
+                <!-- 4. MODELOS DE PODERES EN EL SALVADOR -->
+                <div class="category-box">
+                    <h3><i class="fa-solid fa-scale-balanced"></i> Modelos de Poderes en El Salvador</h3>
+                    <ul>
+                        <li><span>Modelo de Poder General Administrativo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Poder para Propiedad Intelectual en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Poder General Judicial en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Poder para Vender Vehículo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Poder para Vender Arma de Fuego en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Revocatoria de Poder en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                    </ul>
+                </div>
+
+                <!-- 5. ÁREA DE FAMILIA EN EL SALVADOR -->
+                <div class="category-box">
+                    <h3><i class="fa-solid fa-users"></i> Área de Familia en El Salvador</h3>
+                    <ul>
+                        <li><span>Modelo de Escritura de Matrimonio Civil en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de Testamento en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Reconocimiento de hijo</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Identidad</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Identidad Personal de Fallecido</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Autorización migratoria para menor de edad</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta Notarial Repudio de Herencia</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Aceptación de Herencia Vía Notarial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                    </ul>
+                </div>
+
+                <!-- 6. DERECHO LABORAL EN EL SALVADOR -->
+                <div class="category-box">
+                    <h3><i class="fa-solid fa-briefcase"></i> Derecho Laboral en El Salvador</h3>
+                    <ul>
+                        <li><span>Presentación Sobre Derecho Laboral Actualizado Septiembre de 2015</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo_reglamento_interno_de_trabajo_El_Salvador (obtenido de Tramites.gob.sv)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Modelo de demanda de terminación de contrato individual de trabajo sin responsabilidad para el patrono en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tarjeta QR -->
+        <section id="contacto" class="section-block qr-section">
+            <div class="qr-container">
+                <div class="qr-info">
+                    <h2><i class="fa-solid fa-address-card"></i> Contacto Directo & Tarjeta Digital</h2>
+                    <p>Escanee el código QR desde su teléfono móvil para guardar automáticamente nuestro contacto o iniciar una conversación por WhatsApp.</p>
+                    
+                    <ul class="contact-details">
+                        <li><i class="fa-solid fa-user-tie"></i> <strong>Lic. Nelson Oswaldo Deras</strong></li>
+                        <li><i class="fa-solid fa-phone"></i> <strong>Teléfono / WhatsApp:</strong> 7976-6240</li>
+                        <li><i class="fa-solid fa-envelope"></i> <strong>Correo Electrónico:</strong> neloswal@gmail.com</li>
+                        <li><i class="fa-solid fa-clock"></i> <strong>Horarios de Atención:</strong> Lunes a Jueves (9:00 a.m. - 3:00 p.m.)</li>
+                    </ul>
+
+                    <a href="https://wa.me/50379766240" target="_blank" class="btn-whatsapp-direct">
+                        <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp Directo
+                    </a>
+                </div>
+
+                <div class="qr-image-card">
+                    <img src="tarjeta-qr.jpg" alt="Tarjeta NWD - Lic. Nelson Oswaldo Deras QR" class="card-qr-img">
+                </div>
+            </div>
+        </section>
+
     </main>
-    <script src="script.js"></script>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>CORPORATIVO NELOSWAL</h4>
+                <p>Abogacía, Notariado y Consultoría Informática.</p>
+                <p>San Salvador, El Salvador.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Atención</h4>
+                <p>Lunes a Jueves: 9:00 a.m. a 3:00 p.m.</p>
+                <p>Teléfono: 7976-6240</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Corporativo NELOSWAL - Lic. Nelson Oswaldo Deras. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
