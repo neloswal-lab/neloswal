@@ -3,161 +3,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corporativo NELOSWAL | Firma Legal & Consultoría</title>
+    <title>Corporativo NELOSWAL | Abogacía, Notariado y Consultoría</title>
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome para Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Bar de Información Superior -->
+    <!-- Barra Superior -->
     <div class="top-bar">
-        <div class="container top-bar-content">
-            <span><i class="fa-solid fa-clock"></i> Atención: Lunes a Jueves de 9:00 a.m. a 3:00 p.m.</span>
-            <span><i class="fa-solid fa-phone"></i> Tel. / WhatsApp: <a href="tel:79766240" style="color: #fff;">7976-6240</a> | <a href="mailto:neloswal@gmail.com" style="color: #fff;">neloswal@gmail.com</a></span>
+        <div class="container top-bar-flex">
+            <span><i class="fa-regular fa-clock"></i> Atención: Lunes a Jueves de 9:00 a.m. a 3:00 p.m.</span>
+            <span><i class="fa-solid fa-phone"></i> Tel. / WhatsApp: <a href="https://wa.me/50379766240" target="_blank">7976-6240</a> | <a href="mailto:neloswal@gmail.com">neloswal@gmail.com</a></span>
         </div>
     </div>
 
-    <!-- Encabezado con Membrete Corporativo -->
-    <header class="header-corporate">
-        <div class="container brand-container">
-            <div class="brand-left">
-                <!-- Logo de Corporativo NELOSWAL -->
-                <img src="logo-neloswal.jpg" alt="Logo Corporativo NELOSWAL" class="corporate-logo">
-                <div class="logo-text">
-                    <h1 class="brand-title">CORPORATIVO NELOSWAL</h1>
-                    <p class="brand-subtitle">ABOGACÍA • NOTARIADO • CONSULTORÍA INFORMÁTICA Y CONTABLE</p>
+    <!-- Encabezado Principal -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="brand-box">
+                <img src="logo-neloswal.jpg" alt="Logo Corporativo NELOSWAL" class="nav-logo">
+                <div class="brand-text">
+                    <h1>CORPORATIVO NELOSWAL</h1>
+                    <span>ABOGACÍA • NOTARIADO • CONSULTORÍA INFORMÁTICA Y CONTABLE</span>
                 </div>
             </div>
 
-            <!-- Perfil del Abogado con Foto -->
-            <div class="lawyer-profile">
-                <img src="foto-nelson.jpg" alt="Lic. Nelson Oswaldo Deras" class="lawyer-photo">
-                <div class="credentials">
-                    <p class="lawyer-name">Lic. Nelson Oswaldo Deras</p>
-                    <p class="lawyer-title">Licenciado en Ciencias Jurídicas</p>
-                    <p class="lawyer-title">Posgrado en Derecho Empresarial</p>
-                    <p class="lawyer-title">Técnico en Sistemas Informáticos</p>
+            <!-- Tarjeta de Perfil Profesional -->
+            <div class="profile-card">
+                <img src="foto-nelson.jpg" alt="Lic. Nelson Oswaldo Deras" class="profile-img">
+                <div class="profile-details">
+                    <h3>Lic. Nelson Oswaldo Deras</h3>
+                    <p>Licenciado en Ciencias Jurídicas</p>
+                    <p>Posgrado en Derecho Empresarial</p>
+                    <p>Técnico en Sistemas Informáticos</p>
                 </div>
             </div>
         </div>
 
+        <!-- Menú de Navegación con Desplegables -->
         <nav class="main-nav">
             <div class="container">
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                    <li><a href="#servicios"><i class="fa-solid fa-briefcase"></i> Áreas de Práctica</a></li>
-                    <li><a href="#tarifas"><i class="fa-solid fa-tags"></i> Tarifas de Asesoría</a></li>
-                    <li><a href="#modelos"><i class="fa-solid fa-file-lines"></i> Modelos de Documentos</a></li>
-                    <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto / QR</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#area-legal"><i class="fa-solid fa-scale-balanced"></i> Área Legal <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#legal-mercantil">Derecho Mercantil</a></li>
+                            <li><a href="#legal-penal">Derecho Penal</a></li>
+                            <li><a href="#legal-administrativo">Derecho Administrativo</a></li>
+                            <li><a href="#legal-familia">Derecho de Familia</a></li>
+                            <li><a href="#legal-civil">Derecho Civil</a></li>
+                            <li><a href="#legal-constitucional">Derecho Constitucional</a></li>
+                            <li><a href="#legal-ninez">Derecho de la Niñez y Adolescencia</a></li>
+                            <li><a href="#legal-especiales">Leyes Especiales</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#informatica"><i class="fa-solid fa-laptop-code"></i> Área Informática <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#informatica">Clases de Word, Access, Excel y PowerPoint</a></li>
+                            <li><a href="#informatica">Creación de Páginas Web</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#contabilidad-escolar"><i class="fa-solid fa-calculator"></i> Contabilidad Escolar <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#contabilidad-escolar">Asesoría en Liquidaciones</a></li>
+                            <li><a href="#contabilidad-escolar">Asesoría en Elaboración de PEA</a></li>
+                            <li><a href="#contabilidad-escolar">Presupuestos de Ingreso y Egreso</a></li>
+                            <li><a href="#contabilidad-escolar">Libros de Ingresos, Egresos y Banco</a></li>
+                            <li><a href="#contabilidad-escolar">Asesoría con COMPRASAL</a></li>
+                            <li><a href="#contabilidad-escolar">Planillas ISSS, AFP y Retenciones MH</a></li>
+                            <li><a href="#contabilidad-escolar">Compras con Bonos Escolares</a></li>
+                            <li><a href="#contabilidad-escolar">Contratos de Empleados y Chalet</a></li>
+                            <li><a href="#contabilidad-escolar">Gastos de Otros Ingresos</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#tarifas"><i class="fa-solid fa-tags"></i> Tarifas</a></li>
+                    <li><a href="#modelos"><i class="fa-solid fa-folder-open"></i> Documentos</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Contenido Principal -->
-    <main class="container">
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h2>Soluciones Legales y Consultoría Estratégica en El Salvador</h2>
+            <p>Asesoría integral y representación jurídica bajo un estricto estándar de profesionalismo corporativo en el Área Metropolitana de San Salvador.</p>
+        </div>
+    </section>
 
-        <!-- Buscador -->
-        <section id="buscador-seccion" class="search-box">
-            <h2><i class="fa-solid fa-magnifying-glass"></i> Buscador de Documentos Legales con Membrete</h2>
-            <p>Encuentre escritos y modelos de documentos oficiales bajo el sello y formato de Corporativo NELOSWAL.</p>
-            <div class="search-bar">
-                <input type="text" id="input-busqueda" placeholder="Buscar documento o modelo...">
-                <button type="button"><i class="fa-solid fa-search"></i> Buscar</button>
-            </div>
-        </section>
-
-        <!-- Tarifas de Asesoría -->
-        <section id="tarifas" class="section-block">
+    <!-- 1. TARIFAS -->
+    <section id="tarifas" class="pricing-section">
+        <div class="container">
             <h2 class="section-title"><i class="fa-solid fa-scale-balanced"></i> Tarifas de Asesoría Legal Personalizada</h2>
-            <div class="grid-pricing">
+            <p class="section-subtitle">Área Metropolitana de San Salvador</p>
 
-                <div class="pricing-card">
-                    <div class="price-header">
-                        <h3>Asesoría Legal Personalizada</h3>
-                        <p class="price-location">Área Metropolitana de San Salvador</p>
-                    </div>
-                    <div class="price-body">
-                        <span class="price-amount">$25.00</span>
-                        <p>Atención directa sobre consultas jurídicas generales, notariado y contratos.</p>
-                        <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20una%20Asesoría%20Legal%20Personalizada" target="_blank" class="btn-price"><i class="fa-brands fa-whatsapp"></i> Agendar por $25.00</a>
-                    </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Asesoría Legal Personalizada</h3>
+                    <p class="subtitle">Área Metropolitana de San Salvador</p>
+                    <div class="price">$25.00</div>
+                    <p class="description">Atención directa sobre consultas jurídicas generales, notariado y contratos.</p>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20una%20asesor%C3%ADa%20legal%20general%20por%20$25" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar por $25.00
+                    </a>
                 </div>
 
-                <div class="pricing-card featured">
-                    <div class="price-badge">Especializada</div>
-                    <div class="price-header">
-                        <h3>Asesoría Mercantil y Derecho de Deudores</h3>
-                        <p class="price-location">Empresas, Sociedades y Personas Naturales</p>
+                <div class="price-card featured">
+                    <span class="badge">Especializada</span>
+                    <h3>Asesoría Mercantil y Derecho de Deudores</h3>
+                    <p class="subtitle">Empresas, Sociedades y Personas Naturales</p>
+                    <div class="price-split">
+                        <div class="tier">
+                            <span class="tier-name">Personas Naturales</span>
+                            <span class="tier-price">$50.00</span>
+                        </div>
+                        <div class="tier">
+                            <span class="tier-name">Sociedades y Laboral Empresas</span>
+                            <span class="tier-price">$100.00</span>
+                        </div>
                     </div>
-                    <div class="price-body">
-                        <span class="price-amount">$50.00</span>
-                        <p>Análisis de deudas con instituciones financieras, embargos y juicios ejecutivos.</p>
-                        <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20una%20Asesoría%20Mercantil%20y%20Derecho%20de%20Deudores" target="_blank" class="btn-price"><i class="fa-brands fa-whatsapp"></i> Agendar por $50.00</a>
-                    </div>
+                    <p class="description">Análisis de deudas con instituciones financieras, embargos, juicios ejecutivos y asesoría laboral a empresas.</p>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20asesor%C3%ADa%20mercantil/laboral" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar Asesoría
+                    </a>
                 </div>
 
-                <div class="pricing-card">
-                    <div class="price-header">
-                        <h3>Asesoría del Régimen de Excepción</h3>
-                        <p class="price-location">Materia Penal y Garantías Constitucionales</p>
-                    </div>
-                    <div class="price-body">
-                        <span class="price-amount">$60.00</span>
-                        <p>Orientación especializada, investigación técnica del expediente y visitas a centros penales.</p>
-                        <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20una%20Asesoría%20del%20Régimen%20de%20Excepción" target="_blank" class="btn-price"><i class="fa-brands fa-whatsapp"></i> Agendar por $60.00</a>
-                    </div>
+                <div class="price-card">
+                    <h3>Asesoría del Régimen de Excepción</h3>
+                    <p class="subtitle">Área Metropolitana de San Salvador</p>
+                    <div class="price">$60.00</div>
+                    <p class="description">Orientación especializada, materia penal y garantías constitucionales aplicadas.</p>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20asesor%C3%ADa%20del%20r%C3%A9gimen%20de%20excepci%C3%B3n%20por%20$100" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar por $100.00
+                    </a>
                 </div>
 
+                <div class="price-card featured">
+                    <span class="badge">Especializada</span>
+                    <h3>Revisión de Expedientes Penales</h3>
+                    <p class="subtitle">Área Metropolitana de San Salvador</p>
+                    <div class="price-split">
+                        <div class="tier">
+                            <span class="tier-name">Delitos Comunes</span>
+                            <span class="tier-price">$100.00</span>
+                        </div>
+                        <div class="tier">
+                            <span class="tier-name">Delitos de Régimen de Excepción</span>
+                            <span class="tier-price">$300.00</span>
+                        </div>
+                    </div>
+                    <p class="description">Investigación técnica del expediente judicial en juzgados, análisis de medidas cautelares y diagnóstico penal.</p>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20agendar%20revisi%C3%B3n%20de%20expediente" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar Revisión
+                    </a>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Directorio Exacto de la Imagen -->
-        <section id="modelos" class="section-block">
-            <h2 class="section-title"><i class="fa-solid fa-folder-tree"></i> Modelos de Documentos Legales</h2>
-            <p style="margin-bottom: 20px; color: #555;">Catálogo de escritos y modelos adaptados al membrete y formato de <strong>Corporativo NELOSWAL</strong> conforme a la legislación de El Salvador.</p>
+    <!-- 2. ÁREAS LEGALES -->
+    <section id="area-legal" class="legal-services-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-gavel"></i> Áreas de Práctica Jurídica y Servicios Legales</h2>
+            <p class="section-subtitle">Asesoría jurídica especializada, representación procesal y notariado en El Salvador</p>
 
-            <div class="legal-categories">
-                
-                <!-- 1. ÁREA MERCANTIL O CORPORATIVA EN EL SALVADOR -->
-                <div class="category-box">
-                    <h3><i class="fa-solid fa-building"></i> Área Mercantil o Corporativa en El Salvador</h3>
+            <div class="legal-grid">
+                <div id="legal-mercantil" class="legal-card">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h3>1. Derecho Mercantil</h3>
+                    </div>
+                    <p class="legal-card-desc">Brindamos asesoría corporativa integral a comerciantes individuales y sociedades mercantiles para proteger sus inversiones y garantizar la legalidad de sus operaciones comerciales en El Salvador.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Juicios Ejecutivos Mercantiles:</strong> Cobro judicial de pagarés, letras de cambio y títulos valores.</li>
+                        <li><strong>Derecho de Deudores:</strong> Negociación y reestructuración de deudas con instituciones financieras y comerciales.</li>
+                        <li><strong>Derecho Societario:</strong> Constitución de sociedades, aumentos/disminuciones de capital, reformas de estatutos y disoluciones.</li>
+                        <li><strong>Contratación Comercial:</strong> Redacción y revisión de contratos de distribución, franquicias y servicios.</li>
+                    </ul>
+                </div>
+
+                <div id="legal-penal" class="legal-card">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>2. Derecho Penal</h3>
+                    </div>
+                    <p class="legal-card-desc">Defensa técnica especializada y representación de víctimas en procesos penales, velando por el debido proceso, la presunción de inocencia y las garantías constitucionales en todas las etapas procesales.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Defensa Penal Técnica:</strong> Asistencia legal en sede policial, fiscalía (FGR) y juzgados penales.</li>
+                        <li><strong>Revisión de Expedientes Judiciales:</strong> Diagnóstico de casos en juzgados de paz, instrucción y sentencia.</li>
+                        <li><strong>Representación en Audiencias:</strong> Audiencia Inicial, Preliminar y Vista Pública en delitos comunes.</li>
+                        <li><strong>Querella y Querellante Adhesivo:</strong> Representación legal de víctimas para la restitución de derechos e indemnizaciones.</li>
+                    </ul>
+                </div>
+
+                <div id="legal-administrativo" class="legal-card">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-landmark"></i>
+                        <h3>3. Derecho Administrativo</h3>
+                    </div>
+                    <p class="legal-card-desc">Acompañamiento y representación legal ante instituciones del Estado, municipalidades y entes autónomos en El Salvador, garantizando la defensa frente a actos administrativos sancionatorios o restrictivos.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Procedimientos Administrativos Sancionatorios:</strong> Defensa en procedimientos instaurados por ministerios, alcaldías o superintendencias.</li>
+                        <li><strong>Recursos Administrativos:</strong> Elaboración e interposición de recursos de reconsideración, revisión y apelación.</li>
+                        <li><strong>Proceso Contencioso Administrativo:</strong> Impugnación de actos administrativos ilegales ante los Juzgados y Cámaras Contencioso Administrativas.</li>
+                        <li><strong>Trámites y Permisos Estatales:</strong> Asesoría en licencias, registro de proveedores y compras públicas.</li>
+                    </ul>
+                </div>
+
+                <div id="legal-familia" class="legal-card">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-people-roof"></i>
+                        <h3>4. Derecho de Familia</h3>
+                    </div>
+                    <p class="legal-card-desc">Atención profesional y sensible en conflictos familiares, orientada a la protección de los derechos personales y patrimoniales del núcleo familiar ante Juzgados de Familia.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Procesos de Divorcio:</strong> Divorcio por mutuo consentimiento de los cónyuges y divorcio contencioso (separación o vida intolerable).</li>
+                        <li><strong>Alimentos y Cuota Alimenticia:</strong> Demandas de fijación, aumento, modificación o cese de cuota alimenticia.</li>
+                        <li><strong>Cuidado Personal y Régimen de Visitas:</strong> Representación en controversias de guarda, custodia y régimen de comunicación.</li>
+                        <li><strong>Impugnación y Establecimiento de Paternidad:</strong> Procesos judiciales de filiación paterna o materna.</li>
+                    </ul>
+                </div>
+
+                <div id="legal-civil" class="legal-card">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                        <h3>5. Derecho Civil</h3>
+                    </div>
+                    <p class="legal-card-desc">Asesoría e intervención en la protección del patrimonio, la propiedad de bienes inmuebles, contratos civiles y la tramitación de derechos hereditarios por la vía judicial y notarial.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Aceptación de Herencia:</strong> Diligencias por vía judicial (Juzgados de lo Civil) y notarial (testada e intestada).</li>
+                        <li><strong>Procesos Declarativos:</strong> Juicios comunes y abreviados de desocupación de inmuebles, reivindicatorios de dominio y rescisión de contratos.</li>
+                        <li><strong>Derecho Inmobiliario:</strong> Compraventas, remedición de inmuebles, constitución/cancelación de hipotecas y usufructos.</li>
+                        <li><strong>Diligencias Notariales:</strong> Rectificación de partidas, títulos supletorios y rectificación de áreas.</li>
+                    </ul>
+                </div>
+
+                <div id="legal-constitucional" class="legal-card">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-scale-unbalanced-flip"></i>
+                        <h3>6. Derecho Constitucional</h3>
+                    </div>
+                    <p class="legal-card-desc">Uso de mecanismos y garantías constitucionales de emergencia para salvaguardar la libertad personal y la vulneración de derechos fundamentales consagrados en la Constitución de la República.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Procesos de Hábeas Corpus (Exhibición Personal):</strong> Presentación ante la Sala de lo Constitucional o Cámaras por detenciones ilegales, arbitrarias o restricción injustificada de la libertad.</li>
+                        <li><strong>Procesos de Amparo Constitucional:</strong> Protección contra actos o resoluciones que vulneren derechos constitucionales de propiedad, audiencia o debido proceso.</li>
+                        <li><strong>Inconstitucionalidades:</strong> Análisis técnico y solicitudes de inaplicabilidad de normas o reglamentos contarios a la Constitución.</li>
+                    </ul>
+                </div>
+
+                <div id="legal-ninez" class="legal-card">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <h3>7. Derecho de la Niñez y Adolescencia</h3>
+                    </div>
+                    <p class="legal-card-desc">Representación legal ajustada a la Ley Crecer Juntos para la Protección Integral de la Niñez y Adolescencia, priorizando el interés superior de niñas, niños y adolescentes ante Juntas de Protección (CONAPINA) y Juzgados Especializados.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Medidas de Protección:</strong> Intervención legal preventiva y correctiva ante la amenaza o vulneración de derechos de NNA.</li>
+                        <li><strong>Representación ante CONAPINA:</strong> Atención de procedimientos administrativos en Juntas de Protección de la Niñez y Adolescencia.</li>
+                        <li><strong>Procesos Judiciales Especializados:</strong> Asistencia en restitución internacional, autorizaciones para salir del país y tutelas.</li>
+                    </ul>
+                </div>
+
+                <div id="legal-especiales" class="legal-card featured-legal">
+                    <div class="legal-card-header">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                        <h3>8. Leyes Especiales en El Salvador</h3>
+                    </div>
+                    <p class="legal-card-desc">Atención experta en marcos normativos especiales y de coyuntura jurídica en El Salvador que requieren un alto grado de especialización procesal.</p>
+                    <ul class="legal-card-list">
+                        <li><strong>Régimen de Excepción:</strong> Orientación legal, investigación y seguimiento de causas bajo la normativa de excepción, análisis del expediente judicial en Tribunales de Crimen Organizado.</li>
+                        <li><strong>Ley Especial contra Delitos Informáticos:</strong> Asesoría y defensa procesal en delitos cibernéticos, fraude electrónico e identidad digital.</li>
+                        <li><strong>Ley de Extinción de Dominio y LAVAD:</strong> Asesoría preventiva y defensa procesal patrimonial ante la Ley contra el Lavado de Dinero y de Activos.</li>
+                        <li><strong>Ley Especial de Inquilinato:</strong> Procesos especiales de desocupación por mora en el pago de cánones y terminación de contratos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ÁREA INFORMÁTICA -->
+    <section id="informatica" class="pricing-section" style="background-color: #fcf8f8;">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Consultoría y Capacitación Informática</h2>
+            <p class="section-subtitle">Herramientas ofimáticas y desarrollo web profesional</p>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Capacitación en Ofimática</h3>
+                    <p class="subtitle">Word, Access, Excel y PowerPoint</p>
+                    <p class="description">Clases prácticas y personalizadas orientadas al dominio eficiente de herramientas de oficina y bases de datos.</p>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20informaci%C3%B3n%20sobre%20clases%20de%20inform%C3%A1tica" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Consultar Clases
+                    </a>
+                </div>
+                <div class="price-card featured">
+                    <span class="badge">Desarrollo Web</span>
+                    <h3>Creación de Páginas Web</h3>
+                    <p class="subtitle">Diseño Moderno y Adaptativo</p>
+                    <p class="description">Diseño y desarrollo de sitios web profesionales a medida para impulsar tu marca o negocio en El Salvador.</p>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20cotizar%20la%20creaci%C3%B3n%20de%20una%20p%C3%A1gina%20web" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Cotizar Web
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTABILIDAD ESCOLAR -->
+    <section id="contabilidad-escolar" class="pricing-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-calculator"></i> Contabilidad y Asesoría para Centros Escolares</h2>
+            <p class="section-subtitle">Gestión administrativa, financiera y legal especializada para instituciones educativas</p>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Gestión Financiera y Libros</h3>
+                    <p class="subtitle">Control contable escolar</p>
+                    <ul class="custom-list">
+                        <li>Elaboración de presupuestos de ingreso y egreso</li>
+                        <li>Llenado de libros de ingresos, egresos y libro de banco</li>
+                        <li>Asesoría en gastos de otros ingresos</li>
+                    </ul>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20asesor%C3%ADa%20en%20contabilidad%20y%20libros%20para%20centro%20escolar" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Consultar Servicio
+                    </a>
+                </div>
+                <div class="price-card featured">
+                    <span class="badge">Proyectos y Liquidaciones</span>
+                    <h3>PEA, Liquidaciones y COMPRASAL</h3>
+                    <p class="subtitle">Normativa y compras públicas</p>
+                    <ul class="custom-list">
+                        <li>Asesoría en liquidaciones</li>
+                        <li>Asesoría en elaboración de PEA</li>
+                        <li>Asesoría con COMPRASAL</li>
+                        <li>Asesoría en compras con bonos escolares</li>
+                    </ul>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20asesor%C3%ADa%20en%20PEA,%20liquidaciones%20y%20COMPRASAL" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Consultar Servicio
+                    </a>
+                </div>
+                <div class="price-card">
+                    <h3>Planillas y Contrataciones</h3>
+                    <p class="subtitle">Personal, Chalets y Tributos</p>
+                    <ul class="custom-list">
+                        <li>Elaboración de planillas ISSS, AFP y retenciones Ministerio de Hacienda</li>
+                        <li>Elaboración de contratos de empleados</li>
+                        <li>Elaboración de contratos de chalet</li>
+                    </ul>
+                    <a href="https://wa.me/50379766240?text=Hola,%20deseo%20asesor%C3%ADa%20en%20planillas%20y%20contratos%20escolares" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Consultar Servicio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MODELOS DE DOCUMENTOS CON FILTROS POR PESTAÑAS Y BÚSQUEDA -->
+    <section id="modelos" class="models-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-folder-open"></i> Biblioteca de Documentos y Modelos Legales</h2>
+            <p class="section-subtitle">Modelos con membrete y formato oficial conforme a la legislación de El Salvador.</p>
+
+            <!-- Buscador en Tiempo Real -->
+            <div class="search-box">
+                <input type="text" id="documentSearch" placeholder="Escriba aquí para buscar cualquier modelo o contrato...">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+            </div>
+
+            <!-- Filtros por Pestañas (Tabs) Estilo Profesional -->
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-category="all"><i class="fa-solid fa-layer-group"></i> Todos</button>
+                <button class="tab-btn" data-category="mercantil"><i class="fa-solid fa-building"></i> Mercantil</button>
+                <button class="tab-btn" data-category="civil"><i class="fa-solid fa-house-chimney"></i> Civil</button>
+                <button class="tab-btn" data-category="familia"><i class="fa-solid fa-people-roof"></i> Familia</button>
+                <button class="tab-btn" data-category="poderes"><i class="fa-solid fa-scale-balanced"></i> Poderes</button>
+                <button class="tab-btn" data-category="intelectual"><i class="fa-solid fa-lightbulb"></i> Propiedad Intelectual</button>
+                <button class="tab-btn" data-category="laboral"><i class="fa-solid fa-briefcase"></i> Laboral</button>
+            </div>
+
+            <div class="documents-grid">
+                <!-- 1. Mercantil -->
+                <div class="category-box" data-cat="mercantil">
+                    <h3><i class="fa-solid fa-building"></i> Área Mercantil o Corporativa</h3>
                     <ul>
-                      <li>
-            <span>Modelo de escritura de constitución de sociedad en El Salvador con accionistas extranjeros</span> 
-            <a href="https://drive.google.com/file/d/1PZf3idQxfmChMbJbF-SNu4zljU3Altzd/view?usp=sharing" download class="btn-doc-link">
-                <i class="fa-solid fa-file-pdf"></i> Descargar PDF
-            </a>
-        </li>
                         <li>
-    <span>Modelo de nombramiento de gerente para una empresa en El Salvador</span> 
-    <a href="https://drive.google.com/file/d/1Py-bFtVBQT30O4QzYV_pT4uFOBi5Mr7I/view?usp=sharing" target="_blank" class="btn-doc-link">
-        <i class="fa-solid fa-file-pdf"></i> Ver / Descargar
-    </a>
-</li>
+                            <span>Modelo de escritura de constitución de sociedad en El Salvador con accionistas extranjeros</span> 
+                            <a href="https://docs.google.com/document/d/1XWvOeCNvcC8CacUm0qQzXwHrT8G7pUVShN8WEHUkm54/edit?usp=drivesdk" target="_blank" class="btn-doc-link">
+                                <i class="fa-solid fa-file-pdf"></i> Descargar PDF
+                            </a>
+                        </li>
+                        <li>
+                            <span>Modelo de nombramiento de gerente para una empresa en El Salvador</span> 
+                            <a href="https://drive.google.com/file/d/1Py-bFtVBQT30O4QzYV_pT4uFOBi5Mr7I/view?usp=sharing" target="_blank" class="btn-doc-link">
+                                <i class="fa-solid fa-file-pdf"></i> Ver / Descargar
+                            </a>
+                        </li>
                         <li><span>Constitución de Sociedad en Comandita por Acciones</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Constitución de sociedad en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Modificación de sociedad Salvadoreña</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Liquidación de sociedad Salvadoreña</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Credencial de Junta Directiva</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Acta de Renuncia de Junta Directiva</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Acta de Junta Directiva</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Acta de Junta General de Accionistas</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Contrato de Resciliación</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Fg86 - Informe de Notarios por otorgamiento de instrumentos</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Auténtica de Firma de Representante Legal de una Sociedad en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Acta Asociación Agropecuaria</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Escritura de Aumento de Capital de una Sociedad en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo estatutos de una iglesia en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de escritura de fusión por absorción</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Requisitos para Registrarse como Comerciante Individual en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Aumento de Capital Social en Sociedad Anónima</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Disminución de Capital Social y Reforma de Estatutos</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Estatutos de Sociedad de Responsabilidad Limitada (S. de R.L.)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Poder Especial Mercantil para Trámites en Registro de Comercio</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta de Asamblea General Ordinaria de Accionistas</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta de Asamblea General Extraordinaria de Accionistas</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Contrato de Franquicia Mercantil</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Contrato de Distribución y Agencia Exclusiva</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                     </ul>
                 </div>
 
-                <!-- 2. ÁREA DE DERECHO CIVIL EN EL SALVADOR -->
-                <div class="category-box">
-                    <h3><i class="fa-solid fa-house-chimney"></i> Área de Derecho Civil en El Salvador</h3>
+                <!-- 2. Civil -->
+                <div class="category-box" data-cat="civil">
+                    <h3><i class="fa-solid fa-house-chimney"></i> Área de Derecho Civil e Inmobiliario</h3>
                     <ul>
+                        <li><span>Remedición de inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Declaración Jurada</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Cancelación de hipoteca</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Otorgamiento de crédito prendario</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Otorgamiento de crédito hipotecario</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Leasing de equipo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Donación Irrevocable</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Donación Revocable</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Compraventa de vehículo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Arrendamiento de Vehículo con Promesa de Venta</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Compraventa de motor</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
@@ -167,123 +445,150 @@
                         <li><span>Promesa de venta de inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Contrato de arrendamiento en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                         <li><span>Contrato de prestación de servicios profesionales</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Remedición de inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Declaración Jurada</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Cancelación de hipoteca</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Otorgamiento de crédito prendario</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Otorgamiento de crédito hipotecario</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Leasing de equipo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Contrato de Trabajo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Donación Irrevocable</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Donación Revocable (cortesía de Marielos Zaldaña)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Donación Revocable con Testigos</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Acta de conciliación Extrajudicial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Acta Conciliación de Tránsito</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Constitución de Usufructo sobre Inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Resciliación de Contrato de Arrendamiento</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Servidumbre de Tránsito y Acueducto</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                     </ul>
                 </div>
 
-                <!-- 3. ÁREA DE PROPIEDAD INTELECTUAL EN EL SALVADOR -->
-                <div class="category-box">
-                    <h3><i class="fa-solid fa-lightbulb"></i> Área de Propiedad Intelectual en El Salvador</h3>
+                <!-- 3. Familia -->
+                <div class="category-box" data-cat="familia">
+                    <h3><i class="fa-solid fa-people-roof"></i> Área de Derecho de Familia y Sucesiones</h3>
                     <ul>
-                        <li><span>Cesión de derechos de uso de marca</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Solicitud de aplicación de marca en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Solicitud de aplicación de patentes</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Solicitud de registro sanitario (próximamente)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Formulario para el Registro Sanitario de Vacunas (Obtenido de DNM, OCT 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Formularios de Cambios Post-Registro Cambios Administrativos (Obtenido de DNM, OCT 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Formulario de Solicitud para el Reconocimiento de Registro Sanitario de Alimentos y Bebidas de los Países Miembros de la Unión Aduanera (Obtenido de Ministerio de Salud de El Salvador Oct 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Formulario para Iniciar el Trámite de Registro de Alimentos y Bebidas Nacionales (Obtenido de Ministerio de Salud de El Salvador, Oct 2015)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Solicitud de registro de derechos de autor</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Demanda de Divorcio por Mutuo Consentimiento</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Convenio de Divorcio por Mutuo Consentimiento</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Demanda de Divorcio por Separación de los Cónyuges</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Solicitud de Fijación de Cuota Alimenticia</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Proceso de Cuidado Personal y Régimen de Visitas</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Diligencias Notariales de Aceptación de Herencia</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Escritura de Testamento Abierto Notarial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Cesión de Derechos Hereditarios en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Rectificación de Partida de Nacimiento ante Notario</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Diligencias de Adecuación de Nombre</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                     </ul>
                 </div>
 
-                <!-- 4. MODELOS DE PODERES EN EL SALVADOR -->
-                <div class="category-box">
+                <!-- 4. Poderes -->
+                <div class="category-box" data-cat="poderes">
                     <h3><i class="fa-solid fa-scale-balanced"></i> Modelos de Poderes en El Salvador</h3>
                     <ul>
-                        <li><span>Modelo de Poder General Administrativo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Poder para Propiedad Intelectual en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Poder General Judicial en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Poder para Vender Vehículo en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Poder para Vender Arma de Fuego en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Revocatoria de Poder en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Poder General Judicial con Cláusula Especial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Poder Especial para Trámites Bancarios y Financieros</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Poder General Administrativo y de Disposición</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Poder Especial para Compraventa de Inmueble</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Poder Especial para Trámites de Divorcio</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Sustitución de Poder Judicial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Revocatoria de Poder Notarial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                     </ul>
                 </div>
 
-                <!-- 5. ÁREA DE FAMILIA EN EL SALVADOR -->
-                <div class="category-box">
-                    <h3><i class="fa-solid fa-users"></i> Área de Familia en El Salvador</h3>
+                <!-- 5. Propiedad Intelectual -->
+                <div class="category-box" data-cat="intelectual">
+                    <h3><i class="fa-solid fa-lightbulb"></i> Área de Propiedad Intelectual</h3>
                     <ul>
-                        <li><span>Modelo de Escritura de Matrimonio Civil en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de Testamento en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Reconocimiento de hijo</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Identidad</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Identidad Personal de Fallecido</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Autorización migratoria para menor de edad</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Acta Notarial Repudio de Herencia</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Aceptación de Herencia Vía Notarial</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Solicitud de Registro de Marca de Fábrica en CNR</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Traspaso y Cesión de Derechos de Marca</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Registro de Nombre Comercial y Señal de Propaganda</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Licencia de Uso de Marca Registrada</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                     </ul>
                 </div>
 
-                <!-- 6. DERECHO LABORAL EN EL SALVADOR -->
-                <div class="category-box">
-                    <h3><i class="fa-solid fa-briefcase"></i> Derecho Laboral en El Salvador</h3>
+                <!-- 6. Laboral -->
+                <div class="category-box" data-cat="laboral">
+                    <h3><i class="fa-solid fa-briefcase"></i> Área de Derecho Laboral Empresarial</h3>
                     <ul>
-                        <li><span>Presentación Sobre Derecho Laboral Actualizado Septiembre de 2015</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo_reglamento_interno_de_trabajo_El_Salvador (obtenido de Tramites.gob.sv)</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
-                        <li><span>Modelo de demanda de terminación de contrato individual de trabajo sin responsabilidad para el patrono en El Salvador</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Contrato Individual de Trabajo a Tiempo Indeterminado</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Reglamento Interno de Trabajo para Empresa</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Finiquito Laboral y Recepción de Indemnización</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
+                        <li><span>Acta de Amonestación y Sanción Disciplinaria</span> <a href="#" class="btn-doc-link"><i class="fa-solid fa-file-word"></i> Formato</a></li>
                     </ul>
                 </div>
-
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Tarjeta QR -->
-        <section id="contacto" class="section-block qr-section">
-            <div class="qr-container">
-                <div class="qr-info">
-                    <h2><i class="fa-solid fa-address-card"></i> Contacto Directo & Tarjeta Digital</h2>
-                    <p>Escanee el código QR desde su teléfono móvil para guardar automáticamente nuestro contacto o iniciar una conversación por WhatsApp.</p>
+    <!-- 6. CONTACTO -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fa-solid fa-address-card"></i> Contacto Directo & Tarjeta Digital</h2>
+            
+            <div class="contact-card-box">
+                <div class="contact-info-text">
+                    <h3>Escanee el código QR desde su teléfono móvil para guardar automáticamente nuestro contacto o iniciar una conversación por WhatsApp.</h3>
+                    <p><i class="fa-solid fa-user-tie"></i> <strong>Lic. Nelson Oswaldo Deras</strong></p>
+                    <p><i class="fa-solid fa-phone"></i> <strong>Teléfono / WhatsApp:</strong> 7976-6240</p>
+                    <p><i class="fa-solid fa-envelope"></i> <strong>Correo Electrónico:</strong> neloswal@gmail.com</p>
+                    <p><i class="fa-regular fa-clock"></i> <strong>Horarios de Atención:</strong> Lunes a Jueves (9:00 a.m. - 3:00 p.m.)</p>
                     
-                    <ul class="contact-details">
-                        <li><i class="fa-solid fa-user-tie"></i> <strong>Lic. Nelson Oswaldo Deras</strong></li>
-                        <li><i class="fa-solid fa-phone"></i> <strong>Teléfono / WhatsApp:</strong> 7976-6240</li>
-                        <li><i class="fa-solid fa-envelope"></i> <strong>Correo Electrónico:</strong> neloswal@gmail.com</li>
-                        <li><i class="fa-solid fa-clock"></i> <strong>Horarios de Atención:</strong> Lunes a Jueves (9:00 a.m. - 3:00 p.m.)</li>
-                    </ul>
-
-                    <a href="https://wa.me/50379766240" target="_blank" class="btn-whatsapp-direct">
+                    <a href="https://wa.me/50379766240" target="_blank" class="btn-whatsapp-large">
                         <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp Directo
                     </a>
                 </div>
-
-                <div class="qr-image-card">
-                    <img src="tarjeta-qr.jpg" alt="Tarjeta NWD - Lic. Nelson Oswaldo Deras QR" class="card-qr-img">
+                
+                <div class="contact-qr-image">
+                    <img src="tarjeta-qr.jpg" alt="Tarjeta Digital y Código QR Corporativo NELOSWAL">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <!-- Pie de Página -->
-    <footer>
-        <div class="footer-container">
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container footer-flex">
             <div class="footer-col">
-                <h4>CORPORATIVO NELOSWAL</h4>
-                <p>Abogacía, Notariado y Consultoría Informática.</p>
+                <h3>CORPORATIVO NELOSWAL</h3>
+                <p>Abogacía, Notariado y Consultoría Informática y Contable.</p>
                 <p>San Salvador, El Salvador.</p>
             </div>
-            <div class="footer-col">
-                <h4>Atención</h4>
+            <div class="footer-col text-right">
+                <p><strong>Atención</strong></p>
                 <p>Lunes a Jueves: 9:00 a.m. a 3:00 p.m.</p>
                 <p>Teléfono: 7976-6240</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Corporativo NELOSWAL - Lic. Nelson Oswaldo Deras. Todos los derechos reservados.</p>
-        </div>
     </footer>
+
+    <!-- Script para Filtros Dinámicos y Buscador al Instante -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Script de Pestañas de Filtrado
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const catBoxes = document.querySelectorAll('.category-box');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    catBoxes.forEach(box => {
+                        if (category === 'all' || box.getAttribute('data-cat') === category) {
+                            box.style.display = 'block';
+                        } else {
+                            box.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Script de Búsqueda en Tiempo Real
+            const searchInput = document.getElementById('documentSearch');
+            searchInput.addEventListener('keyup', function() {
+                const term = searchInput.value.toLowerCase();
+                const docItems = document.querySelectorAll('.category-box li');
+
+                docItems.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(term)) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
